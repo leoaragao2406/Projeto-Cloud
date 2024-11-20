@@ -1,0 +1,26 @@
+name: dog_facts
+
+services:
+  db:
+    image: postgres
+    container_name: db_container
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-password}
+      - POSTGRES_DB=${POSTGRES_DB:-postgres-db}
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 2
+  app:
+    build: .
+    container_name: dog_facts_container
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-password}@${POSTGRES_HOST:-db}:5432/${POSTGRES_DB:-postgres-db}
+    depends_on:
+      db:
+        condition: service_healthy
