@@ -15,7 +15,7 @@ services:
       interval: 5s
       retries: 2
   app:
-    build: .
+    image: leozacche/cloud_dog_facts:latest
     container_name: dog_facts_container
     ports:
       - "8000:8000"
