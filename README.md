@@ -95,10 +95,11 @@ Authorization: Bearer {token}
 ```
 
 ## **Deploy na AWS**
-- 1. Configuração do Ambiente
+### ** 1. Configuração do Ambiente**
 Utilize o eksctl para criar um cluster Kubernetes na região desejada.
-Certifique-se de ter acesso configurado ao AWS CLI com permissões suficientes.
-- 2. Comandos de Deploy
+
+
+### **2. Comandos de Deploy**
 Crie o cluster:
 
 ```bash
@@ -122,6 +123,6 @@ kubectl apply -f db-deployment.yml
 ```bash
 kubectl get svc fastapi-service
 ```
-3. Acesso ao Serviço
+### 3. Acesso ao Serviço
 - Link:
 
