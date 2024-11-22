@@ -28,10 +28,11 @@ Certifique-se de ter as seguintes ferramentas instaladas no sistema:
 1. **Docker:** Para gerenciar containers.  
 2. **Docker Compose:** Para orquestrar múltiplos serviços.  
 
-## **Docker-Hub**  
-
-Link do projeto: https://hub.docker.com/r/leozacche/cloud_dog_facts
 ---
+
+## **Docker-Hub**
+
+- link para o docker-hub do projeto: https://hub.docker.com/r/leozacche/cloud_dog_facts
 
 ## **Instruções de Instalação e Uso Local**  
 
