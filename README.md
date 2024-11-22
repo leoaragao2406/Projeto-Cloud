@@ -85,7 +85,7 @@ Resposta Sucesso:
 ### **3. Consulta de Fatos Sobre Cachorros**
 - Rota: /consultar
 - Método: GET
-Cabeçalho:
+- Cabeçalho:
   `Authorization: Bearer {token}`
 - Resposta Sucesso:
 ```bash
