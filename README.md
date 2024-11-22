@@ -19,7 +19,6 @@ O **Projeto-Cloud** é uma aplicação construída com **FastAPI**, com suporte 
 - **Autenticação:** JWT  
 - **ORM:** SQLAlchemy  
 - **Containerização:** Docker e Docker Compose  
-- **Linguagem:** Python 3.10  
 
 ---
 
@@ -45,8 +44,6 @@ Execute o seguinte comando para iniciar os serviços:
 ```bash
 docker-compose up
 ```
-
-### **3. Acessando a Aplicação**
 - **Documentação Interativa da API:** http://localhost:8000
 
 ---
