@@ -86,9 +86,7 @@ Resposta Sucesso:
 - Rota: /consultar
 - Método: GET
 Cabeçalho:
-```bash
 Authorization: Bearer {token}
-```
 - Resposta Sucesso:
 ```bash
 {
