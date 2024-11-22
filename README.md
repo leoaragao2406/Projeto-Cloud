@@ -130,4 +130,7 @@ kubectl get svc fastapi-service
 ### 3. Acesso ao Serviço
 - Link: [Aqui](http://a9ca5a8ec6d8347d7b723896e3d9662c-310152187.us-east-2.elb.amazonaws.com/)
 
+## ***Vídeos da Aplicação**
+- Execução da Aplicação:
 
+- AWS:
