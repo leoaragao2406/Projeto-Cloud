@@ -133,4 +133,4 @@ kubectl get svc fastapi-service
 ## **Vídeos da Aplicação**
 - Execução da Aplicação: [Aqui](https://youtu.be/hsxCa_MIRp4?feature=shared)
 
-- AWS:[Aqui]()
+- AWS:[Aqui](https://youtu.be/pkiQdAHc7jA?si=x8prAmBG4ix5uW-X)
