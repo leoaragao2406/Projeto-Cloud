@@ -37,57 +37,55 @@ Certifique-se de ter as seguintes ferramentas instaladas no sistema:
 ```bash
 git clone <URL-do-repositorio>
 cd <nome-do-repositorio>
+```
 
-
-## **2. Configurando as Variáveis de Ambiente**
-Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:
-
-env
-Copiar código
-DATABASE_URL=mysql+pymysql://root:root@db:3306/projeto
-3. Subindo os Containers
+### **2. Subindo os Containers**
 Execute o seguinte comando para iniciar os serviços:
 
-bash
-Copiar código
+```bash
 docker-compose up
-4. Acessando a Aplicação
-Documentação Interativa da API: http://localhost:8000
-Descrição dos Endpoints
-1. Registro de Usuário
-Rota: /register
-Método: POST
-Parâmetros:
-json
-Copiar código
+```
+
+### **3. Acessando a Aplicação**
+- **Documentação Interativa da API:** http://localhost:8000
+
+---
+  
+## **Descrição dos Endpoints**
+### **1. Registro de Usuário**
+- Rota: /register
+- Método: POST
+- Parâmetros:
+```bash
 {
   "nome": "string",
   "email": "string",
   "senha": "string"
 }
-Resposta Sucesso:
-json
-Copiar código
+```
+- Resposta Sucesso:
+```bash
 {
   "token": "jwt_token"
 }
-2. Login de Usuário
-Rota: /login
-Método: POST
-Parâmetros:
-json
-Copiar código
+```
+### **2. Login de Usuário**
+- Rota: /login
+- Método: POST
+- Parâmetros:
+```bash
 {
   "email": "string",
   "senha": "string"
 }
+```
 Resposta Sucesso:
-json
-Copiar código
+```bash
 {
   "token": "jwt_token"
 }
-3. Consulta de Fatos Sobre Cachorros
+```
+### **3. Consulta de Fatos Sobre Cachorros**
 Rota: /consultar
 Método: GET
 Cabeçalho:
