@@ -90,12 +90,12 @@ Authorization: Bearer {token}
 - Resposta Sucesso:
 ```bash
 {
-  "fact": "Dogs can understand up to 250 words and gestures."
+  "Flyball, a dog sport consisting of relays, hurdles, and ball retrieving, was developed in the late 60s, and the first tournament was held in 1983."
 }
 ```
 
 ## **Deploy na AWS**
-### ** 1. Configuração do Ambiente**
+### **1. Configuração do Ambiente**
 Utilize o eksctl para criar um cluster Kubernetes na região desejada.
 
 
