@@ -86,7 +86,7 @@ Resposta Sucesso:
 - Rota: /consultar
 - Método: GET
 Cabeçalho:
-Authorization: Bearer {token}
+  `Authorization: Bearer {token}`
 - Resposta Sucesso:
 ```bash
 {
@@ -124,5 +124,6 @@ kubectl apply -f db-deployment.yml
 kubectl get svc fastapi-service
 ```
 ### 3. Acesso ao Serviço
-- Link:
+- Link: [Aqui](http://a9ca5a8ec6d8347d7b723896e3d9662c-310152187.us-east-2.elb.amazonaws.com/)
+
 
