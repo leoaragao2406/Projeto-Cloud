@@ -1,41 +1,39 @@
 # Projeto-Cloud  
 **Leonardo Aragão**  
 
-## Documentação do Projeto  
+---
 
-### **Visão Geral**  
-Este projeto foi desenvolvido utilizando **FastAPI** e **SQLAlchemy** e tem como objetivo fornecer fatos interessantes sobre cachorros através de uma API externa. Os usuários podem se cadastrar, fazer login e acessar os dados utilizando autenticação por **JWT**.  
+## **Visão Geral**  
+
+O **Projeto-Cloud** é uma aplicação construída com **FastAPI**, com suporte para autenticação e consumo de uma API externa de fatos sobre cachorros. Ele é containerizado usando **Docker**, permitindo fácil implantação local ou em nuvem.  
+
+### **Principais Funcionalidades**  
+- Registro e login de usuários com autenticação baseada em **JWT**.  
+- Consulta de fatos curiosos sobre cachorros fornecidos pela **Dog API**.  
 
 ---
 
-### **Funcionalidades**  
-- **Cadastro e autenticação de usuários:**  
-  Os usuários podem registrar-se e fazer login para obter um token de acesso.  
-- **Consulta de fatos sobre cachorros:**  
-  A API retorna fatos curiosos sobre cachorros por meio da integração com a **Dog API**.  
-
----
-
-### **Tecnologias Utilizadas**  
-- **Backend:** FastAPI  
+## **Tecnologias Utilizadas**  
+- **Framework Backend:** FastAPI  
 - **Banco de Dados:** MySQL  
 - **Autenticação:** JWT  
 - **ORM:** SQLAlchemy  
-- **Containerização:** Docker  
-- **Python:** 3.10  
+- **Containerização:** Docker e Docker Compose  
+- **Linguagem:** Python 3.10  
 
 ---
 
-### **Pré-requisitos**  
+## **Pré-requisitos**  
+
 Certifique-se de ter as seguintes ferramentas instaladas no sistema:  
-- **Docker:** Para gerenciar e executar containers.  
-- **Docker Compose:** Para orquestração de múltiplos containers.  
+1. **Docker:** Para gerenciar containers.  
+2. **Docker Compose:** Para orquestrar múltiplos serviços.  
 
 ---
 
-### **Instalação**  
+## **Instruções de Instalação e Uso Local**  
 
-#### **1. Clone o repositório:**  
+### **1. Clonando o Repositório**  
 ```bash
-git clone <URL do repositório>
+git clone <URL-do-repositorio>
 cd <nome-do-repositorio>
