@@ -44,7 +44,7 @@ Execute o seguinte comando para iniciar os serviços:
 ```bash
 docker-compose up
 ```
-- **Documentação Interativa da API:** http://localhost:8000
+- **Aplicação estará no endpoint:** http://localhost:8000
 
 ---
   
@@ -83,67 +83,47 @@ Resposta Sucesso:
 }
 ```
 ### **3. Consulta de Fatos Sobre Cachorros**
-Rota: /consultar
-Método: GET
+- Rota: /consultar
+- Método: GET
 Cabeçalho:
-css
-Copiar código
+```bash
 Authorization: Bearer {token}
-Resposta Sucesso:
-json
-Copiar código
+```
+- Resposta Sucesso:
+```bash
 {
   "fact": "Dogs can understand up to 250 words and gestures."
 }
-Exemplo de Fluxo com cURL
-Registro de Usuário
-bash
-Copiar código
-curl -X POST http://localhost:8000/register \
-     -H "Content-Type: application/json" \
-     -d '{"nome": "Leonardo", "email": "leonardo@email.com", "senha": "senha123"}'
-Login
-bash
-Copiar código
-curl -X POST http://localhost:8000/login \
-     -H "Content-Type: application/json" \
-     -d '{"email": "leonardo@email.com", "senha": "senha123"}'
-Consulta
-bash
-Copiar código
-curl -X GET http://localhost:8000/consultar \
-     -H "Authorization: Bearer <jwt_token>"
-Deploy na AWS
-1. Configuração do Ambiente
+```
+
+## **Deploy na AWS**
+- 1. Configuração do Ambiente
 Utilize o eksctl para criar um cluster Kubernetes na região desejada.
 Certifique-se de ter acesso configurado ao AWS CLI com permissões suficientes.
-2. Comandos de Deploy
+- 2. Comandos de Deploy
 Crie o cluster:
 
-bash
-Copiar código
+```bash
 eksctl create cluster --name projeto_cloud --region us-east-2 --nodes 2
+```
+
 Configure o acesso:
 
-bash
-Copiar código
+```bash
 aws eks --region us-east-2 update-kubeconfig --name projeto_cloud
+````
+
 Faça o deploy dos serviços:
 
-bash
-Copiar código
-kubectl apply -f kubernetes/app-deployment.yml
-kubectl apply -f kubernetes/db-deployment.yml
-Exponha a aplicação:
+```bash
+kubectl apply -f app-deployment.yml
+kubectl apply -f db-deployment.yml
+```
+ Acesse a aplicação:
 
-bash
-Copiar código
-kubectl expose deployment app --type=LoadBalancer --name=app-service
+```bash
+kubectl get svc fastapi-service
+```
 3. Acesso ao Serviço
-Após a criação do Load Balancer, obtenha o IP público para acessar a aplicação diretamente.
-
-Diferenciais do Projeto
-Autenticação segura: Tokens JWT para proteger os endpoints.
-Escalabilidade: Suporte para Kubernetes e fácil integração com a AWS.
-Usabilidade: Documentação clara e endpoints intuitivos.
+- Link:
 
