@@ -32,7 +32,7 @@ Certifique-se de ter as seguintes ferramentas instaladas no sistema:
 
 ## **Docker-Hub**
 
-- link para o docker-hub do projeto: https://hub.docker.com/r/leozacche/cloud_dog_facts
+- Link para o docker-hub do projeto: https://hub.docker.com/r/leozacche/cloud_dog_facts
 
 ## **Instruções de Instalação e Uso Local**  
 
